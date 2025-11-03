@@ -1,19 +1,19 @@
-import {useForm} from "../hooks/useForm";
-export const Register =() =>{
-    const{form, handleChange, handleReset} = useForm({
-        userName: "",
-        email: "",
-        password: "",
-        firstName: "",
-        lasName: ""
-    });
-    const handleSubmit =(event) =>{
-        event.preventDefault();
-        console.log(form);
-        handleReset();
-    };
-    return(
-        <div className="form-container">
+import { useForm } from "../hooks/useForm";
+export const Register = () => {
+  const { form, handleChange, handleReset } = useForm({
+    userName: "",
+    email: "",
+    password: "",
+    firstName: "",
+    lasName: "",
+  });
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(form);
+    handleReset();
+  };
+  return (
+    <div className="form-container">
       <h2>Registro</h2>
       <form onSubmit={handleSubmit}>
         <label>Username</label>
@@ -64,5 +64,5 @@ export const Register =() =>{
         </button>
       </form>
     </div>
-    );
+  );
 };
