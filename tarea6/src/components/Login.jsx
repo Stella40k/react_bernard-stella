@@ -18,9 +18,9 @@ export const Login = ({ onLogin }) => {
         <label>Username:</label>
         <input
           type="text"
-          name="username"
+          name="userName"
           placeholder="username aqui"
-          value={username}
+          value={userName}
           onChange={handleChange}
           required
         />

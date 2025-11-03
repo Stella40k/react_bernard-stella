@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import { useForm, useFotm } from "../hooks/useForm";
+import { useForm } from "../hooks/useForm";
 
 export default function SimpleForm() {
   const { form, handleChange } = useForm({

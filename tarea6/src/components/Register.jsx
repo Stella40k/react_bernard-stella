@@ -5,7 +5,7 @@ export const Register = () => {
     email: "",
     password: "",
     firstName: "",
-    lasName: "",
+    lastName: "",
   });
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -20,8 +20,8 @@ export const Register = () => {
         <input
           type="text"
           className="input"
-          name="username"
-          value={form.username}
+          name="userName"
+          value={form.userName}
           onChange={handleChange}
           required
         />
@@ -47,17 +47,18 @@ export const Register = () => {
         <label>First name:</label>
         <input
           type="text"
-          name="firstname"
-          value={form.firstname}
+          name="firstName"
+          value={form.firstName}
           onChange={handleChange}
         />
 
         <label>Last name:</label>
         <input
           type="text"
-          name="lastname"
-          value={form.lastname}
+          name="lastName"
+          value={form.lastName}
           onChange={handleChange}
+          security=""
         />
         <button type="submit" onClick={handleSubmit}>
           Registrarse

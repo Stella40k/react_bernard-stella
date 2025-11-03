@@ -1,7 +1,9 @@
-export const Loading = ({ Loading }) => {
-  if (!Loading) return null;
+export const Loading = ({ loading }) => {
+  if (!loading) return null;
   return (
-    <div>
+    <div className="loading">
+      {" "}
+      //clases ara probar despues bts y css
       <h1>Cargando...</h1>
     </div>
   );

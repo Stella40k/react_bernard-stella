@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 export const useFetch = (url) => {
-  const [state, setSate] = useState({
+  const [state, setState] = useState({
     data: null,
     loading: true,
     hasError: null,
   });
   const getFetch = async () => {
     try {
-      setSate({
+      setState({
         ...state, //pintamos todo lo q habia mas el nuevo valor q se actualiza
         loading: true,
       });
@@ -18,13 +18,13 @@ export const useFetch = (url) => {
       const data = await response.json();
       await new Promise((resolve) => setTimeout(resolve, 300));
       console.log(data);
-      setSate({
+      setState({
         ...state,
         data: data,
         loading: false,
       });
     } catch (error) {
-      setSate({
+      setState({
         data: null,
         loading: false,
         hasError: error,
