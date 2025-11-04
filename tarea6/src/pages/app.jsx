@@ -42,7 +42,7 @@ export function App() {
         <h1> </h1>
       )}
 
-      {showTask === "task3" ? <FetchSimpsonsApi /> : <h1></h1>}
+      {showTask === "task3" ? <FetchSimpsons /> : <h1></h1>}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useCounter } from "../hooks/useConter";
+import { useCounter } from "../hooks/useCounter";
 
 export default function MultipleCustomHook() {
   const [state, setState] = useState({

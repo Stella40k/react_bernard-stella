@@ -1,9 +1,9 @@
 import { CharacterInfo } from "../components/CharacterInfo";
 import { Loading } from "../components/Loading";
-import { useCounter } from "../hooks/useConter";
+import { useCounter } from "../hooks/useCounter";
 import { useFetch } from "../hooks/useFetch";
 
-export const FetchSimpsonsApi = () => {
+export const FetchSimpsons = () => {
   const { count, handleIncrement, handleDecrement } = useCounter(1);
   const url = `https://thesimpsonsapi.com/api/characters/${count}`;
   const { data, loading, hasError } = useFetch(url);

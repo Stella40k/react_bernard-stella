@@ -20,7 +20,7 @@ export const Login = ({ onLogin }) => {
           type="text"
           name="userName"
           placeholder="username aqui"
-          value={userName}
+          value={form.userName}
           onChange={handleChange}
           required
         />
